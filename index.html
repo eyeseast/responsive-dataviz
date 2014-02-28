@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>DataViz for Everyone</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link href='pig.css' rel='stylesheet' type='text/css' />
-        <script src='pig.js'></script>
+        <link href='big.css' rel='stylesheet' type='text/css' />
+        <script src='big.js'></script>
     </head>
 <body>
-<div class='slide'>use &harr; or scrolling or clicking to navigate</div>
-<div class='slide'>pig</div>
-<div class='slide'><em>Presentation software</em> for busy busy hackers</div>
-<div class='slide'>+text</div>
-<div class='slide'>no config</div>
-<div class='slide'><em>0.7k</em></div>
-<div class='slide' style='background-image:url(http://farm3.static.flickr.com/2506/5757000880_509440308e_z.jpg)'> images too</div>
-<div class='slide'>JS+CSS <a href='https://github.com/tmcw/pig'>github.com/tmcw/pig</a></div>
 
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '4e36eb1ef5a1f53d6f000001');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
+<div class='slide'>dataviz for <em>everyone</em></div>
+
+<div class='slide'>
+    <h3>some assumptions:</h3>
+    <ul>
+        <li>you're building for <em>the web</em> (not a native app, or something else)</li>
+        <li>you're using <em>HTML</em>, <em>CSS</em> and <em>JavaScript</em> (not Flash or Objective-C or some other awful thing)</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h3>four basic approaches</h3>
+    <ul>
+        <li>html</li>
+        <li>svg</li>
+        <li>canvas</li>
+        <li>img</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <img src="./img/lobbying-big.png" alt="Lobbying Missouri">
+</div>
+
+<div class="slide">
+    <img src="./img/svgmap.png" alt="A map in SVG">
+</div>
+
+<div class="slide">
+    <img src="./img/ipos.png" alt="IPO Comparison">
+</div>
+
+<div class="slide">
+    <img src="./img/wines.png" alt="Wines">
+</div>
+
+<div class="slide">
+    “But using a static image feels like cheating...”
+</div>
+
+<div class="slide">
+    “If you ain’t trying to cheat a little, you ain’t likely to win much.” &mdash; <em>Richard Petty</em>
+</div>
+
+<div class="slide">
+    <h3>there is "The Way"</h3>
+    <img src="http://i142.photobucket.com/albums/r96/jfallows/IMG_4476A.jpg" alt="The Way">
+</div>
+
+<div class="slide">
+    <h3 class="imageText">or you can find "a way"</h3>
+    <img src="http://i142.photobucket.com/albums/r96/jfallows/IMG_0969.jpg" alt="a way">
+    <p class="small"><a href="http://www.theatlantic.com/technology/archive/2007/11/-quot-the-quot-way-vs-quot-a-quot-way-japan-v-china-dept/7835/">credit to James Fallows for this</a></p>
+</div>
+
+<div class="slide">
+    <h3>problem children:</h3>
+    <ul>
+        <li>labels</li>
+        <li>legends</li>
+        <li>hover</li>
+        <li>interaction</li>
+        <li>tables</li>
+        <li>wide graphics on a small screen (histograms, etc)</li>
+        <li>forms</li>
+    </ul>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32005313-1', 'github.com');
+  ga('send', 'pageview');
+
 </script>
